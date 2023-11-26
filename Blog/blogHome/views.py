@@ -93,6 +93,19 @@ class HelloDjangoORM(View):
         # articulo.body = 'nueva desc. desde orm'
         # articulo.save()
 
+        # Agregar registros
+
+        for producto in range(10):
+            articulo = ArticulosBlog.objects.create(
+                title_blog=f'Articulo {producto}',
+                body=f'nuevas funciones {producto}....',
+                imagen_article='/media/item.jpg',
+                articule_url=f'Novedades-en-Django-{producto}'
+            )
+            print('creando el producto con el id', articulo)
+
+
+        # print(articulo)
 
 
         return render(request, template_name, {})
