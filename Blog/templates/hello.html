@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Hola </title>
+</head>
+
+<body>
+
+    {% include 'components/header.html' %}
+
+    <h1>Hello Django </h1>
+    <img height="300px" src="https://i.pinimg.com/736x/48/c3/25/48c325432b09780583351fe472073fa0.jpg" />
+
+
+
+    <p style="font-size: 20px">
+        {{ email }}
+    </p>
+
+    <p style="font-size: 20px">
+        {{ username }}
+    </p>
+
+    {% if isAdmin %}
+        <h2>Ere Adminnistrado</h2>
+        <button>agregar usuario</button>
+    {% endif  %}
+
+    <ul>
+        {% for item in creditos  %}
+                <li> {{item}} </li>
+        {% endfor %}
+    </ul>
+
+
+
+</body>
+
+</html>
