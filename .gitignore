@@ -1,0 +1,19 @@
+# Ignorar archivos generados por Python
+*.pyc
+__pycache__
+
+# Ignorar archivos generados por Django
+*.sqlite3
+*.pyc
+*.pyo
+*.pyc
+*.pyo
+*.pyc
+__pycache__
+*.pyc
+*.pyo
+*.pyc
+*.pyo
+
+# Ignorar archivos generados por el entorno virtual
+venv/
