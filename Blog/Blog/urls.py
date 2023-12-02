@@ -24,5 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('blog', home, name='blog'),
     # path('blog-home', BlogWelcome.as_view() , name='blog-home'),
-    path('blog/', include('blogHome.urls'))
+    path('blog/', include('blogHome.urls')),
+    path('api/v1/blog/', include('apiBlog.urls'))
+    # path('api/v2/', include('apiBlogV2.urls'))
 ]

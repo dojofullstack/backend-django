@@ -49,15 +49,13 @@ APPS_LOCAL = [
     'blogHome'
 ]
 
-# APPS_THRITYS = [
-#     'django-rest-framework',
-#     'paypal',
-#     'stripe'
-# ]
+APPS_THRITYS = [
+    'rest_framework',
+]
 
 
 INSTALLED_APPS.extend(APPS_LOCAL)
-# INSTALLED_APPS.extend(APPS_THRITYS)
+INSTALLED_APPS.extend(APPS_THRITYS)
 
 
 MIDDLEWARE = [
